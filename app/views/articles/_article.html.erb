@@ -1,4 +1,4 @@
 <article>
-  <h2><%= article[:title] %></h2>
-  <p><%= article[:body] %></p>
+  <%= render(partial: 'articles/article/title', locals: { title: article[:title] } ) %>
+  <%= render(partial: 'articles/article/body', locals: { body: article[:body] } ) %>
 </article>
