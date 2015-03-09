@@ -1,8 +1,5 @@
 <h1>Articles#index</h1>
 
 <% @articles.each do |article| %>
-  <article>
-    <h2><%= article[:title] %></h2>
-    <p><%= article[:body] %></p>
-  </article>
+  <%= render(partial: 'article', locals: { article: article } ) %>
 <% end %>
